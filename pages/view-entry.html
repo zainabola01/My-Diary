@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- styles.css link -->
+        <link rel="stylesheet" href="../styles/view-entry.css">
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/axios.min.js"></script> -->
+
+          
+        <title>Diary Entries</title>           
+    </head>
+
+    <body>
+        <main>
+            <!-- header -->
+            <header>
+                <div> <p>My Diary</p> </div>
+                <div class="nav-button">
+                    <button  id="logout-btn" onclick="toLogout()">Logout
+                        <span id="logout-spinner"></span>
+                    </button>
+                </div>
+            </header>
+            
+            <div class="container">
+                <form>
+                    <div class="hero-text">
+                        <p>My Diary Entries</p>
+                        <button type="button" id="new-entry-btn" onclick="toDiary()">New Entry</button>
+                    </div>
+
+                    <section>
+                        <div id="entry-list" class="entry-container">
+                            <div id="loadercontainer" class="loader-container"> 
+                                <span class="loader"></span>
+                            </div>
+                            <div id="entries"></div>
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </main>
+        
+        <script>
+            function toDiary() {
+                window.location.href = "./diary.html";
+            }
+
+            function toEditEntry() {
+                window.location.href = "./edit-entry.html";
+            }
+
+            // function toEditEntry(id) {
+            //     window.location.href = `edit-entry.html?id=${id}`;
+            // }
+
+            function toLogout(){
+                window.location.href = "./login-page.html"
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src ="../service/view.js"></script>
+    </body>
+</html>        

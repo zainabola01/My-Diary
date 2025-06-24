@@ -1,0 +1,95 @@
+*{
+    text-decoration: none;
+}
+    body{
+    max-width: 100%;
+    font-family: 'Montserrat';
+}
+/* HEADER STYLING */
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f3a2a2;
+}
+header p{
+    font-size: 1.7rem;
+    color: #461d12;
+    font-weight: bold;
+    margin: 17px 0;
+}
+/* END OF HEADER STYLING */
+
+
+/* MAIN BODY STYLING */
+.container{
+    position: relative;
+    padding: 2rem 0 ;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid #da7b7b;
+}
+.hero-text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #461d12;
+    margin-top: -1.5rem;
+}
+.hero-text button{
+    font-size: 1rem;
+}
+main{
+    background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
+    padding: 1px 5rem;
+    border-radius: 10px;
+}
+form{
+    background: linear-gradient(10deg, #d4b692, #e2b1a3);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.input-box input{
+    width: 50%;
+    padding: 10px 10px;
+    background:#f3e1dc ;
+    border-radius: 8px;
+    border: none;       
+    outline: none;
+    font-size: 1rem;
+    color: rgb(65, 60, 60);
+    font-weight: 500; 
+}
+textarea{
+    min-width: 80%;
+    height: auto;
+    outline: none;
+    border-radius: 5px;
+    background:#f3e1dc;
+    padding: 10px;
+    border: 1px solid #f3e1dc;
+    font-size: 1rem;
+    
+}
+/* END OF MAIN STYLING */
+
+
+/* BUTTON STYLING */
+button{
+    padding: 8px 2rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    border: 1px solid #461d12;
+    color:  whitesmoke;
+    background: linear-gradient(90deg, #5a2e20,#461d12); 
+    cursor: pointer;
+}
+.cancel-btn, .update-btn{
+    margin-right: 1rem;
+    margin-top: 10px;
+}
+#save-btn{
+    margin-right: 3px;
+}
+button:hover{
+    color: #f1d0d0;
+}

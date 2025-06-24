@@ -1,0 +1,90 @@
+ *{
+    text-decoration: none;
+}
+    body{
+    max-width: 100%;
+    font-family: 'Montserrat';
+    }
+/* HEADER STYLING */
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f3a2a2;
+}
+header p{
+    font-size: 1.5rem;
+    color: #461d12;
+    font-weight: bold;
+    margin: 17px 0;
+}
+
+/* HOME BUTTON STYLING */
+#home-btn{
+    margin-top: 0.7rem;
+    background: #461d12; 
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px 3rem;
+    border: 1px solid #461d12;
+}
+#home-btn:hover{
+   color: #f1d0d0;
+}
+/* END OF HEADER STYLING */
+
+
+/* MAIN BODY STYLING */
+.container{
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem 0 ;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid #da7b7b;
+}
+main{
+    background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
+    padding: 1px 5rem;
+    border-radius: 10px ;
+}
+form{
+    background: linear-gradient(10deg, #d4b692, #e2b1a3);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #461d12;
+    font-weight: bold;
+    font-size: 1.8rem;   
+    padding-bottom: 1rem;
+}
+
+/* input Textarea styling */
+.input-box input{
+    width: 95%;
+    padding: 12px 10px;
+    border-radius: 15px;
+    border: none;       
+    outline: none;
+    font-size: 0.8rem;
+    color: rgb(65, 60, 60);
+    font-weight: 500;
+}
+/* LOGIN BUTTON STYLING */
+#login-btn{
+    padding: 12px 8rem;
+    margin: 3rem -8px 5rem -8px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 1px solid #461d12;
+    color:  whitesmoke;
+    background: linear-gradient(90deg, #5a2e20,#461d12); 
+    cursor: pointer;
+}
+#login-btn:hover{
+    color: #f1d0d0;
+}
+

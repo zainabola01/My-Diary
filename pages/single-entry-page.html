@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+     <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     
+     <!-- styles.css link -->
+    <link rel="stylesheet" href="../styles/single-entry.css" />
+
+    <title>Single Entry View Page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p>My Diary</p>
+        <button class="Cancel" onclick="window.location.href='view-entry.html'">Cancel</button>
+      </header>
+
+      <div class="container">
+        <div class="entry-container">
+          <h2 id="entry-title">Loading...</h2>
+          <p id="entry-content"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="../service/single-view.js" defer></script>
+  </body>
+</html>

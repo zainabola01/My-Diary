@@ -1,0 +1,96 @@
+*{
+    text-decoration: none;
+}
+    body{
+    max-width: 100%;
+    font-family: 'Montserrat';
+}
+/* HEADER STYLING */
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f3a2a2;
+}
+header p{
+    font-size: 1.7rem;
+    color: #461d12;
+    font-weight: bold;
+    margin: 17px 0;
+}
+#logout-btn, .nav-btn{
+    margin-top: 1rem;
+    padding: 8px 1.5rem;
+}
+/* END OF HEADER STYLING */
+
+.container{
+    position: relative;
+    padding: 2rem 0 ;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid #da7b7b;
+}
+.hero-text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin-top: -1.8rem;
+    color: #461d12;
+}
+
+main{
+    background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
+    padding: 1px 5rem;
+    border-radius: 10px;
+}
+form{
+    background: linear-gradient(10deg, #d4b692, #e2b1a3);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* BUTTON AND ENTRY STYLING */
+#new-entry-btn{
+    padding: -1px;
+    margin-top: 1rem;
+}
+button{  
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #461d12;
+    color:  whitesmoke;
+    background: linear-gradient(90deg, #5a2e20,#461d12); 
+    cursor: pointer;
+}
+button:hover{
+    color: #f1d0d0;
+}
+
+
+/* LOADER STYLING */
+.loader-container{
+    min-height: 80%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 

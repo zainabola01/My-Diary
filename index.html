@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- styles.css link -->
+        <link rel="stylesheet" href="../styles/landing.css">
+
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        
+        <title>My Diary App</title>           
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <!-- header -->
+            <header>
+                <div> 
+                    <p> My Diary</p>
+                </div>
+            </header>
+            <!-- end of header -->
+    
+
+            <!--main -->
+            <main>
+                <!-- Main  heading section -->
+                <div class="hero-text">
+                    <h1> Relive your memories beautifully <br> <span>Make your words come alive</span></h1>
+                    <p>Start writing about your day, your mood, your dreams- <br>it's simple, private, and rewarding</p>
+                    <button type="submit" class="signin-btn" onclick="toLogin()">Get Started</button>
+                </div>
+                <!-- end of main  heading section -->
+          
+                <!-- story preview card -->
+                <div class="card">
+                    <div>
+                        <p>Self Care</p>
+                    </div>
+
+                    <div>
+                        
+                        <p>Reflection</p>
+                      
+                    </div>
+                
+                    <div>
+                        <p> Discover</p>
+                    </div>
+        
+                    <div>
+                        <p>Secure</p>
+                    </div>
+
+                    <div>
+                        <p>Organize</p>
+                    </div>
+                </div>
+                <!-- end of  card -->
+            </main>
+        </div>
+        
+        <script>
+            function toLogin() {
+                window.location.href = "./pages/login-page.html";
+            }
+            // window.onload = function( ){
+            //     const token = getCookies("jwt");
+            //     if (token) {
+            //         window.location.href = "./pages/diary.html";
+            //     }
+            // }
+            
+        </script>
+    </body>
+</html>

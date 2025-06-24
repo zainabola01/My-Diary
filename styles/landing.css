@@ -1,0 +1,88 @@
+*{
+    text-decoration: none;
+}
+body {
+    font-family: 'Montserrat';
+    background: #f3f1e9;
+}
+.container{
+    background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
+    border-radius: 10px;
+    padding: 1px 5rem ;
+}
+
+/* header styling */    
+header p {
+    font-size: 1.7rem;
+    color: #461d12;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    margin: 17px 0;
+    border-bottom: 2px solid #f3a2a2;
+}
+
+/* header styling End */
+
+
+/* main body styling */
+.hero-text{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    color:#461d12;
+    padding-bottom: 6rem;
+}
+span{
+    color: #c5ab8b;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hero-text p{
+    margin-top: -10px;
+    font-size: 1rem;
+    color: #461d12;
+}
+.signin-btn {
+    background: #461d12; 
+    color: #f1d0d0;
+    border-radius: 20px ;
+    border: 1px solid #461d12;
+    margin: 1.5rem 0;
+    padding: 15px 7rem;
+    cursor: pointer;
+}
+.signin-btn:hover{
+    color: #f1d0d0;
+}
+/* end of main body styling */
+
+/* card styling */
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    text-align: center;
+    gap: 5rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #da7b7b;
+}
+.card div{
+    border: 1px solid #d46868;
+    padding: 14px 2rem; 
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #d46868;
+}
+.card p{
+    margin: -6px 0;
+}
+
+
+/* MEDIA */
+@media (max-width: 600px) {
+    .signin-btn{
+        padding: 0.6rem 1.2rem;
+        font-size: 0.5rem;
+    }
+}

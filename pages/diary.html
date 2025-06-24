@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- styles.css link -->
+        <link rel="stylesheet" href="../styles/diary.css">
+          
+        <title>Diary Entry</title>           
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <p>My Diary</p>
+            </header>
+            
+            <div class="container">
+                <form>
+                    <div class="hero-text">
+                        <p>New Diary Entry</p>
+                        <div class="nav-btn">
+                        <button id="cancel-btn" onclick="goToEntries()">Cancel</button>
+
+                        </div>
+                    </div>
+
+                    <br>
+                    
+                    <div class="input-box">
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <br>
+                    
+                    <div class="input-box">
+                        <input  id="title" placeholder="Title" required>
+                    </div>
+                    
+                    <br>
+            
+                    <div class="input-box">
+                        <textarea id="content" placeholder="Start writing..." required></textarea>
+                    </div>
+
+                    <br>
+        
+                    <div>
+                        <button type="submit" id="save-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <script>
+            function goToEntries() {
+                window.location.href = "./view-entry.html"
+            }
+        </script>
+        <script>
+            function getCookies(name) {
+                const cookies = document.cookies.split(";")
+
+                console.log ("Cookie:", document.cookie);
+                for (let cookie of cookies) {
+                    const [cookieName, cookieValue] = cookie.trim().split("=");
+                    if (cookieName === name) return cookieValue;
+                }
+                return null;
+            }
+        </script>
+        <script src="../service/diary.js"></script>
+        
+
+    </body>
+</html>
