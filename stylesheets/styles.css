@@ -1,23 +1,22 @@
-*{
-    text-decoration: none;
-}
+
 body {
     font-family: 'Montserrat';
-    background: #f3f1e9;
+    /* background: #f3f1e9; */
+    
 }
 .container{
+    /* border-radius: 10px; */
+    padding: 10px 3rem 1rem 3rem;
     background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
-    border-radius: 10px;
-    padding: 1px 5rem ;
 }
 
 /* header styling */    
 header p {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #461d12;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
     font-weight: bold;
-    margin: 17px 0;
+    margin: 15px 0;
     border-bottom: 2px solid #f3a2a2;
 }
 
@@ -27,15 +26,17 @@ header p {
 /* main body styling */
 .hero-text{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 5rem;
+    margin-top: 4rem;
     color:#461d12;
     padding-bottom: 6rem;
 }
 span{
     color: #c5ab8b;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: none;
 }
 .hero-text p{
     margin-top: -10px;
@@ -44,7 +45,7 @@ span{
 }
 .signin-btn {
     background: #461d12; 
-    color: #f1d0d0;
+    color: whitesmoke;
     border-radius: 20px ;
     border: 1px solid #461d12;
     margin: 1.5rem 0;
@@ -59,7 +60,7 @@ span{
 /* card styling */
 .card{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(70px,150px));
     text-align: center;
     gap: 5rem;
     justify-content: center;
@@ -69,20 +70,41 @@ span{
 }
 .card div{
     border: 1px solid #d46868;
-    padding: 14px 2rem; 
-    border-radius: 20px;
+    padding: 0 2rem; 
+    border-radius: 25px;
     font-size: 1rem;
     color: #d46868;
 }
 .card p{
-    margin: -6px 0;
+    /* margin: -6px 0; */
 }
 
 
 /* MEDIA */
 @media (max-width: 600px) {
+
     .signin-btn{
-        padding: 0.6rem 1.2rem;
-        font-size: 0.5rem;
+        padding: 14px 3rem;
+        font-size: 0.8rem;
+        margin: 0.8rem 0;
     }
+
+.container {
+    padding: 1px 2rem;
+}
+.hero-text h1{
+    /* padding-bottom: 3rem; */
+    font-size: 2rem;
+}
+span{
+    font-size: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(30px,80px))
+}
+.card{
+    display: display;
+    gap: 2rem;
+}
+.hero-text p{
+    font-size: 0.6rem;
+}
 }

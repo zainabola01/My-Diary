@@ -1,21 +1,20 @@
-*{
-    text-decoration: none;
-}
-    body{
+body{
     max-width: 100%;
     font-family: 'Montserrat';
+   
 }
 /* HEADER STYLING */
 header{
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #f3a2a2;
+    margin-bottom: 2rem;
 }
 header p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #461d12;
     font-weight: bold;
-    margin: 17px 0;
+    margin: 15px 0;
 }
 #logout-btn, .nav-btn{
     margin-top: 1rem;
@@ -25,34 +24,35 @@ header p{
 
 .container{
     position: relative;
-    padding: 2rem 0 ;
-    margin-bottom: 4rem;
+    padding: 0 0 2rem 0 ;
+    margin-bottom: 8rem;
     border-bottom: 2px solid #da7b7b;
+    
 }
 .hero-text{
     display: flex;
     justify-content: space-between;
-    font-size: 1.4rem;
-    margin-top: -1.8rem;
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
     color: #461d12;
 }
 
 main{
-    background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
-    padding: 1px 5rem;
+    padding: 1px 3rem 10px 3rem;
     border-radius: 10px;
+    background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
+    
 }
 form{
-    background: linear-gradient(10deg, #d4b692, #e2b1a3);
-    padding: 1.5rem;
+    background: #f0d8bb;
+    padding: 1rem 1rem;
+    box-shadow: 5px 5px  #b4a4a4, 3px 3px #f1d0d0;
     border-radius: 10px;
-}
+    
+}   
 
 /* BUTTON AND ENTRY STYLING */
-#new-entry-btn{
-    padding: -1px;
-    margin-top: 1rem;
-}
+
 button{  
     font-size: 0.9rem;
     padding: 10px;
@@ -66,6 +66,10 @@ button:hover{
     color: #f1d0d0;
 }
 
+#new-entry-btn{
+    padding: -1px;
+    margin-top: 1rem;
+}
 
 /* LOADER STYLING */
 .loader-container{
@@ -94,3 +98,19 @@ button:hover{
         transform: rotate(360deg);
     }
     } 
+
+    @media (max-width: 600px) {
+
+        button{
+            padding: 0.5rem 1.5rem;
+            font-size: 0.7rem;
+            margin-right: 1rem;
+        }
+        form{
+            padding: 0 1rem;
+            margin-bottom: 4rem ;
+        }
+        main{
+            padding: 10px 2rem;
+        }
+    }

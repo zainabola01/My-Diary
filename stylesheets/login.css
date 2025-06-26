@@ -1,9 +1,8 @@
- *{
-    text-decoration: none;
-}
+
     body{
     max-width: 100%;
     font-family: 'Montserrat';
+    
     }
 /* HEADER STYLING */
 header{
@@ -12,19 +11,19 @@ header{
     border-bottom: 2px solid #f3a2a2;
 }
 header p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #461d12;
     font-weight: bold;
-    margin: 17px 0;
+    margin: 15px 0;
 }
 
 /* HOME BUTTON STYLING */
 #home-btn{
-    margin-top: 0.7rem;
+    margin-top: 0.9rem;
     background: #461d12; 
     color: whitesmoke;
     border-radius: 20px;
-    padding: 10px 3rem;
+    padding: 10px 2rem;
     border: 1px solid #461d12;
 }
 #home-btn:hover{
@@ -44,13 +43,13 @@ header p{
 }
 main{
     background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
-    padding: 1px 5rem;
-    border-radius: 10px ;
+    padding: 1px 3rem 3rem 3rem;
 }
 form{
-    background: linear-gradient(10deg, #d4b692, #e2b1a3);
+    background:  #f0d8bb;
     padding: 1rem 2rem;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px  #b4a4a4, 3px 3px #f1d0d0;
 }
 .hero-text{
     display: flex;
@@ -88,3 +87,17 @@ form{
     color: #f1d0d0;
 }
 
+@media (max-width: 600px) {
+
+    #home-btn{
+        padding: 10px 1rem;
+        font-size: 0.7rem;
+        margin-top: 1.5rem;
+    }
+    /* #home-btn{
+        padding: 10px 2rem;
+    } */
+    main{
+        padding: 1px 2rem;
+    }
+}

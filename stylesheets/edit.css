@@ -1,9 +1,8 @@
-*{
-    text-decoration: none;
-}
-    body{
+body{
     max-width: 100%;
     font-family: 'Montserrat';
+   
+
 }
 /* HEADER STYLING */
 header{
@@ -12,10 +11,10 @@ header{
     border-bottom: 2px solid #f3a2a2;
 }
 header p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #461d12;
     font-weight: bold;
-    margin: 17px 0;
+    margin: 15px 0;
 }
 /* END OF HEADER STYLING */
 
@@ -34,18 +33,14 @@ header p{
     color: #461d12;
     margin-top: -1.5rem;
 }
-.hero-text button{
-    font-size: 1rem;
+.hero-text p{
+    font-size: 1.5rem;
 }
 main{
+    /* background: linear-gradient(10deg, #d4b692, #f3dbbd, white); */
+    padding: 1px 3rem 3rem 3rem;
     background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
-    padding: 1px 5rem;
-    border-radius: 10px;
-}
-form{
-    background: linear-gradient(10deg, #d4b692, #e2b1a3);
-    padding: 1.5rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .input-box input{
@@ -82,14 +77,23 @@ button{
     color:  whitesmoke;
     background: linear-gradient(90deg, #5a2e20,#461d12); 
     cursor: pointer;
-}
-.cancel-btn, .update-btn{
-    margin-right: 1rem;
-    margin-top: 10px;
-}
-#save-btn{
-    margin-right: 3px;
+    margin-top: 1rem;
 }
 button:hover{
     color: #f1d0d0;
+}
+
+@media (max-width: 600px) {
+
+    button{
+        padding: 0.5rem 1.5rem;
+        font-size: 0.7rem;
+    }
+    .can
+    form{
+        margin-bottom: 4rem ;
+    }
+    main{
+        padding: 1px 2rem;
+    }
 }

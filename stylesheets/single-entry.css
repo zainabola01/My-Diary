@@ -12,15 +12,13 @@ header{
     border-bottom: 2px solid #f3a2a2;
 }
 header p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #461d12;
     font-weight: bold;
-    margin: 17px 0;
-}
-#logout-btn, .nav-btn{
-    margin-top: 1rem;
+    margin: 15px 0;
 }
 /* END OF HEADER STYLING */
+
 
 .container{
     position: relative;
@@ -28,30 +26,40 @@ header p{
     margin-bottom: 4rem;
     border-bottom: 2px solid #da7b7b;
 }
-.hero-text{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.4rem;
-    margin-top: -1.8rem;
-    color: #461d12;
-}
 main{
     background: linear-gradient(10deg, #d4b692, #f3dbbd, white);
-    padding: 1px 5rem;
-    border-radius: 10px;
+    padding: 1px 3rem 3rem 3rem;
 }
 .entry-container{
-    background: linear-gradient(10deg, #d4b692, #e2b1a3);
+    background: #f0d8bb;
     padding: 1.5rem;
+    box-shadow: 5px 5px  #b4a4a4, 3px 3px #f1d0d0;
     border-radius: 10px;
 }
-.Cancel{
-    /* padding: -10px 0rem; */
+button{
+    padding: 0.5rem 1.5rem;
     margin: 10px 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-radius: 20px;
     border: 1px solid #461d12;
     color:  whitesmoke;
-    background: linear-gradient(90deg, #5a2e20,#461d12); 
+    background: #461d12;
     cursor: pointer;
 } 
+.cancel:hover{
+    color: #f3e1dc;
+}
+
+@media (max-width: 600px) {
+
+    button{
+        padding: 0.3rem 1rem;
+        font-size: 0.9rem;
+    }
+    form{
+        margin-bottom: 4rem ;
+    }
+    main{
+        padding: 1px 2rem;
+    }
+}
