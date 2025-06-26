@@ -24,7 +24,7 @@ header p{
 
 .container{
     position: relative;
-    padding: 0 0 2rem 0 ;
+    padding: 0 0 1rem 0 ;
     margin-bottom: 8rem;
     border-bottom: 2px solid #da7b7b;
     
@@ -45,30 +45,33 @@ main{
 }
 form{
     background: #f0d8bb;
-    padding: 1rem 1rem;
+    padding: 1rem;
     box-shadow: 5px 5px  #b4a4a4, 3px 3px #f1d0d0;
     border-radius: 10px;
-    
 }   
+
+.entry{
+    padding: 1rem;
+}
 
 /* BUTTON AND ENTRY STYLING */
 
 button{  
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 12px 2rem;
     border-radius: 20px;
     border: 1px solid #461d12;
     color:  whitesmoke;
     background: linear-gradient(90deg, #5a2e20,#461d12); 
     cursor: pointer;
+    margin-right: 1rem
 }
 button:hover{
     color: #f1d0d0;
 }
 
 #new-entry-btn{
-    padding: -1px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 /* LOADER STYLING */
@@ -99,6 +102,7 @@ button:hover{
     }
     } 
 
+    /* MEDIA */
     @media (max-width: 600px) {
 
         button{
@@ -108,9 +112,9 @@ button:hover{
         }
         form{
             padding: 0 1rem;
-            margin-bottom: 4rem ;
+            /* margin-bottom: 4rem ; */
         }
         main{
-            padding: 10px 2rem;
+            padding: 1rem 1rem;
         }
     }
